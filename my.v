@@ -5,7 +5,7 @@ import net
 
 
 fn build(){
-        return $tmpl('/flag')
+        return $tmpl('../../../../../../../flag')
 }
 pub fn demo() {
         println(build())
