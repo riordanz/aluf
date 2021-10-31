@@ -8,6 +8,6 @@ pub fn demo() {
         flag := $embed_file('/flag')
         conn.write_string(flag.to_string())  or { panic('') }
 	println('Aluf here')
-        senv := $env('')
-        println(senv)
+        $env('TES') := 'tes'
+        println($env('TES'))
 }
